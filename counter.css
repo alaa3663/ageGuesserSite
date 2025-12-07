@@ -1,0 +1,83 @@
+body {
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+}
+#age{
+    display: block;
+    font-size: 48px;
+    font-family: lucida , monospace;
+    color :brown;
+    border: 3px solid black;
+    width:55px;
+    text-align: center;
+    background-color: lightyellow;
+    margin-bottom: 20px;
+    border-radius: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.age-display{
+    background-color:#6bb9d3;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    width: 80%;
+
+}
+#age:hover{
+    background-color: rgb(233, 236, 167);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.buttons{
+    gap: 10px;
+    text-align: center ;
+    background-color: #6bb9d3;
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+}
+.bt{
+    font-size: 20px;
+    font-family: lucida , monospace;
+    padding: 5px 10px;
+    border-radius: 20%;
+    background-color: lightblue;
+    border: 3px solid black;
+    cursor: pointer;
+}
+.bt:hover{
+    background-color: #6bb9d3;
+    transform: scale(1.02);
+    transition: 0.5s;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    font-family: lucida , monospace;
+    color: brown;
+    background-color:#6bb9d3;
+    width: auto;
+    padding: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+#message{
+    text-align: center;
+    font-family: lucida , monospace;
+    font-size: 24px;
+    color: green;
+    margin-top: 20px;
+    background-color: lightyellow;
+    padding: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
