@@ -16,6 +16,7 @@ body {
     border-radius: 35%;
     margin-left: auto;
     margin-right: auto;
+    transition: 0.5s;
 }
 .age-display{
     background-color:#6bb9d3;
@@ -35,10 +36,10 @@ body {
     gap: 10px;
     text-align: center ;
     background-color: #6bb9d3;
-    width: 83%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 15px;
+    width: 81.3%;
 }
 .bt{
     font-size: 20px;
@@ -48,6 +49,7 @@ body {
     background-color: lightblue;
     border: 3px solid black;
     cursor: pointer;
+    transition: 0.5s;
 }
 .bt:hover{
     background-color: #6bb9d3;
@@ -81,3 +83,55 @@ h1{
     margin-bottom: 0px;
     margin-top: 0px;
 }
+#Bob{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
+    visibility: hidden;
+    cursor: pointer;
+}
+.phrase{
+    display:block;
+    font-weight: bold;
+    color: brown;
+    font-size: 20px;
+    font-family: lucida , monospace;
+    text-align: center;
+    background-color: lightyellow;
+    margin-top: 10px;
+    border: solid 3px black;
+    padding-top:8px;
+    padding-bottom:8px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#phrasestyle{
+    visibility: hidden;
+}
+#me{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: 0.5s;
+}
+#me:hover{
+    color: rgb(99, 5, 5);
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#s1{
+    display: block;
+    text-align: center;
+    font-family: lucida , monospace;
+    font-size: 18px;
+    color: brown;
+    margin-top: 10px;
+    font-weight: bold;
+    visibility: hidden;
+}
+
