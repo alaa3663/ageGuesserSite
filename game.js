@@ -4,7 +4,7 @@ const msg=document.getElementById("try");
 const countLabel=document.getElementById("counting");
 let counter=1;
 const startButton=document.getElementById("start");
-//window.alert("IMPORTANT!\n ALAA WILL OWE YOU A MILK SHAKE IF YOU CLICK YES BY MISTAKE");
+window.alert("IMPORTANT!\n ALAA WILL OWE YOU A MILK SHAKE IF YOU CLICK YES BY MISTAKE");
 yesButton.onchange = function() {
     if(this.checked) {
         msg.textContent = "TRY CLICKING SPONGEBOB";
@@ -49,5 +49,6 @@ trickButton2.onclick = function() {
     document.getElementById('span1').style.visibility = 'visible';
     document.getElementById('continue').style.visibility = 'visible';
 }
+
 
 
