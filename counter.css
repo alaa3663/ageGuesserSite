@@ -1,137 +1,205 @@
 body {
-    background-color: lightgrey;
-    margin: 0;
-    padding: 0;
+background-color: lightgrey;
+margin: 0;
+padding: 0;
+min-height: 100vh;
+box-sizing: border-box;
 }
-#age{
-    display: block;
-    font-size: 48px;
-    font-family: lucida , monospace;
-    color :brown;
-    border: 3px solid black;
-    width:55px;
-    text-align: center;
-    background-color: lightyellow;
-    margin-bottom: 20px;
-    border-radius: 35%;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.5s;
-}
-.age-display{
-    background-color:#6bb9d3;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0px;
-    width: 80%;
 
+.age-display,
+.buttons,
+h1,
+#message {
+width: 90%;
+max-width: 800px;
+margin-left: auto;
+margin-right: auto;
+box-sizing: border-box;
 }
+
+.buttons {
+width: 90%;
+max-width: 800px;
+padding: 15px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+}
+
+#age{
+display: block;
+font-size: clamp(36px, 8vw, 48px);
+font-family: lucida, monospace;
+color: brown;
+border: 3px solid black;
+width: clamp(55px, 12vw, 70px);
+min-width: 55px;
+text-align: center;
+background-color: lightyellow;
+margin-bottom: 20px;
+border-radius: 35%;
+margin-left: auto;
+margin-right: auto;
+transition: 0.5s;
+aspect-ratio: 1;
+}
+
+.age-display{
+background-color:#6bb9d3;
+padding: 10px;
+margin-bottom: 0px;
+}
+
 #age:hover{
-    background-color: rgb(233, 236, 167);
-    cursor: pointer;
-    transition: 0.5s;
+background-color: rgb(233, 236, 167);
+cursor: pointer;
+transition: 0.5s;
 }
-.buttons{
-    gap: 10px;
-    text-align: center ;
-    background-color: #6bb9d3;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 15px;
-    width: 81.3%;
-}
+
 .bt{
-    font-size: 20px;
-    font-family: lucida , monospace;
-    padding: 5px 10px;
-    border-radius: 20%;
-    background-color: lightblue;
-    border: 3px solid black;
-    cursor: pointer;
-    transition: 0.5s;
+font-size: clamp(16px, 4vw, 20px);
+font-family: lucida, monospace;
+padding: 8px 16px;
+border-radius: 20%;
+background-color: lightblue;
+border: 3px solid black;
+cursor: pointer;
+transition: 0.5s;
+min-width: 80px;
 }
+
 .bt:hover{
-    background-color: #6bb9d3;
-    transform: scale(1.02);
-    transition: 0.5s;
-    cursor: pointer;
+background-color: #6bb9d3;
+transform: scale(1.02);
+transition: 0.5s;
+cursor: pointer;
 }
+
 h1{
-    text-align: center;
-    font-family: lucida , monospace;
-    color: brown;
-    background-color:#6bb9d3;
-    width: auto;
-    padding: 10px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0px;
+text-align: center;
+font-family: lucida, monospace;
+color: brown;
+background-color:#6bb9d3;
+padding: 10px;
+margin-bottom: 0px;
+font-size: clamp(24px, 5vw, 32px);
 }
+
 #message{
-    text-align: center;
-    font-family: lucida , monospace;
-    font-size: 24px;
-    color: green;
-    margin-top: 20px;
-    background-color: lightyellow;
-    padding: 10px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-top: 0px;
+text-align: center;
+font-family: lucida, monospace;
+font-size: clamp(18px, 4vw, 24px);
+color: green;
+margin-top: 0px;
+background-color: lightyellow;
+padding: 10px;
+margin-bottom: 0px;
 }
+
 #Bob{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    width: 200px;
-    height: auto;
-    visibility: hidden;
-    cursor: pointer;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+width: min(200px, 80vw);
+height: auto;
+visibility: hidden;
+cursor: pointer;
+max-width: 100%;
 }
+
 .phrase{
-    display:block;
-    font-weight: bold;
-    color: brown;
-    font-size: 20px;
-    font-family: lucida , monospace;
-    text-align: center;
-    background-color: lightyellow;
-    margin-top: 10px;
-    border: solid 3px black;
-    padding-top:8px;
-    padding-bottom:8px;
-    width: 350px;
-    margin-left: auto;
-    margin-right: auto;
+display:block;
+font-weight: bold;
+color: brown;
+font-size: clamp(16px, 4vw, 20px);
+font-family: lucida, monospace;
+text-align: center;
+background-color: lightyellow;
+margin-top: 10px;
+border: solid 3px black;
+padding: 8px 16px;
+width: 90%;
+max-width: 350px;
+margin-left: auto;
+margin-right: auto;
+box-sizing: border-box;
 }
+
 #phrasestyle{
-    visibility: hidden;
+visibility: hidden;
 }
+
 #me{
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-    transition: 0.5s;
+text-decoration: none;
+color: inherit;
+display: inline-block;
+transition: 0.5s;
 }
+
 #me:hover{
-    color: rgb(99, 5, 5);
-    cursor: pointer;
-    transition: 0.5s;
-    transform: scale(1.1);
+color: rgb(99, 5, 5);
+cursor: pointer;
+transition: 0.5s;
+transform: scale(1.1);
 }
+
 #s1{
-    display: block;
-    text-align: center;
-    font-family: lucida , monospace;
-    font-size: 18px;
-    color: brown;
-    margin-top: 10px;
-    font-weight: bold;
-    visibility: hidden;
+display: block;
+text-align: center;
+font-family: lucida, monospace;
+font-size: clamp(14px, 3vw, 18px);
+color: brown;
+margin-top: 10px;
+font-weight: bold;
+visibility: hidden;
 }
+
+@media screen and (max-width: 768px) {
+.age-display,
+.buttons,
+h1,
+#message {
+width: 95%;
+}
+
+
+.buttons {
+    padding: 10px;
+    gap: 8px;
+}
+
+.bt {
+    padding: 6px 12px;
+    min-width: 70px;
+}
+}
+
+@media screen and (max-width: 480px) {
+.age-display,
+.buttons,
+h1,
+#message {
+width: 98%;
+}
+
+
+#age {
+    width: 60px;
+    font-size: 32px;
+}
+
+.bt {
+    flex: 1 0 40%;
+    min-width: 60px;
+    padding: 5px 10px;
+}
+
+.phrase {
+    width: 95%;
+    padding: 6px 12px;
+}
+}
+
 
