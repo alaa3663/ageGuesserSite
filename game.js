@@ -44,6 +44,7 @@ const trickButton2=document.getElementById("trick2");
 trickButton1.onclick = function() {
     counter++;
     countLabel.textContent=counter;
+    document.getElementById("span2").style.visibility="visible";
 }
 trickButton2.onclick = function() {
     document.getElementById('span1').style.visibility = 'visible';
